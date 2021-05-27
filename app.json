@@ -17,13 +17,40 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zulu.restaurants",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.960479336113-sgbb7pfi8aprku4c7gtscgak0f5hjbkc"
+        }
+      },
+	  "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.zulu.restaurants",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAA7YaC5bCYZM4JOR6hAI7Dc0ghILK6e3k"
+        }
+      },
+      "permissions": [
+        "CAMERA", 
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "LOCATION_FOREGROUND",
+        "LOCATION_BACKGROUND",
+        "FOREGROUND_SERVICE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "USER_FACING_NOTIFICATIONS"
+      ],
+      "useNextNotificationsApi": true
     },
     "web": {
       "favicon": "./assets/favicon.png"

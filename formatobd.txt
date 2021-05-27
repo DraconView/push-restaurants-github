@@ -1,0 +1,32 @@
+favorites
+	HXSIjnuf3sjbzULrzWVY
+		idRestaurant: DdMDxv5vVo6sXf4XlgUH
+		idUser: NMpaKxkLU7dfnD5pdg0VRLg2pk12
+
+restaurants
+	DdMDxv5vVo6sXf4XlgUH	
+		address: Av malecon
+		creatAt: 3 de mayo de 2021, 21:13:43 UTC-5
+		creatBy: NMpaKxkLU7dfnD5pdg0VRLg2pk12
+		description: Pizza
+		iamges: url 
+		location: 
+			latitude: 7.889264
+			latudDelta: 0.001
+			longitude:72.5085724
+			longitudeDelta: 0.001
+		name: Vianka
+		phone: 573122585369
+		quantityVoting: 0
+		rating: 0
+		ratingTotal: 0
+
+users
+	GFD2MX5P85PPD6DOW8C9VSYf3hj2
+		token: ExponentPushToken[TcIUC9KKr9GmievQOQIm-1]
+	NMpaKxkLU7dfnD5pdg0VRLg2pk12
+		token: ExponentPushToken[TcIUC9KKr9GmievQOQIm-1]
+		
+		crear 2 tipos de usuarios 1 que va ver el plus 
+		otro para crear los restaurantes 
+		NMpaKxkLU7dfnD5pdg0VRLg2pk12

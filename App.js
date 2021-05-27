@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useRef } from 'react'
+import Navigation from './navigations/Navigation'
+import { LogBox } from 'react-native'
 
+import { startNotifications } from './utils/actions'
+
+LogBox.ignoreAllLogs()
+ 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const notificationListener = useRef()
+  const responseListener = useRef()
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  useEffect(() => {
+    startNotifications(notificationListener, responseListener)
+  }, [])
+
+  return (
+    <Navigation/>
+  )
+}
