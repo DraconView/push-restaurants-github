@@ -16,13 +16,13 @@ export default function UserGuest() {
                 resizeMode="contain"
                 style={styles.image}
             />
-            <Text style={styles.title}>Consulta tu perfil en Restaurants</Text>
+            <Text style={styles.title}>Consulta tu perfil</Text>
             <Text style={styles.description}>
-                ¿Cómo describirías tu mejor restaurante? Busca y visualiza los mejores restaurantes de una forma sencilla, vota cuál te ha gustado más y comenta cómo ha sido tu experiencia.
+                Descubre tu mejor restaurante, busca o visualiza los mejores de forma sencilla, visita el top 10, vota cuál te ha gustado más, comenta cómo ha sido tu experiencia, añadelos a tu lista de favoritos.
             </Text>
             <Button
                 buttonStyle={styles.button}
-                title="Ver tu perfil"
+                title="iniciar sesion"
                 onPress={() => navigation.navigate("login")}
             />
         </ScrollView>
