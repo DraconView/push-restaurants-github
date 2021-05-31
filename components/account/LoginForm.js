@@ -101,8 +101,8 @@ export default function LoginForm() {
             setErrorPassword(result.error)
             return
         }
-
-        navigation.navigate("account")
+        setLoading(false)
+        navigation.navigate("top-restaurants")
     }
 
     const validateData = () => {
