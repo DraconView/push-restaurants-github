@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Icon } from 'react-native-elements'
+import firebase from 'firebase/app'
+
+import Loading from '../../components/Loading'
 
 export default function Menus() {
+    const [user, setUser] = useState(null)
+
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged((userInfo) => {
+            userInfo ? setUser(true) : setUser(false)
+        })
+    }, [])
+
+    if (user === null) {
+        return <Loading isVisible={true} text="Cargando..."/>
+    }
+
     return (
         <View style={styles.viewBody}>
             <Text>Menu</Text>
+            {
+            user && (
             <Icon
                 type="material-community"
                 name="plus"
@@ -14,6 +31,8 @@ export default function Menus() {
                 containerStyle={styles.btnContainer}
                 //onPress={() => navigation.navigate("add-restaurant")}
             />
+                    )
+            }
         </View>
     )
 }

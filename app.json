@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "restaurants_push",
-    "slug": "restaurants_push",
+    "name": "restaurants_para_modificar",
+    "slug": "restaurants_para_modificar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -83,7 +83,8 @@ export default function Restaurant({ navigation, route }) {
         setLoading(false)
         if (response.statusResponse) {
             setIsFavorite(true)
-            toastRef.current.show("Restaurante añadido a favoritos.", 3000)
+            toastRef.current.show("Restaurante añadido a favoritos.", 10000)
+        console.log(restaurant.id)
         } else {
             toastRef.current.show("No se pudo adicionar el restaurante a favoritos. Por favor intenta más tarde.", 3000)
         }
